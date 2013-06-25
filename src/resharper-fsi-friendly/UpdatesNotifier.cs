@@ -13,7 +13,7 @@ namespace CitizenMatt.ReSharper.FsiFriendly
   {
     public UpdatesNotifier(Lifetime lifetime, UpdatesManager updatesManager)
     {
-      var uri = new Uri("UPDATE ME ONCE CHECKED INTO GITHUB");
+      var uri = new Uri("https://github.com/citizenmatt/resharper-fsi-friendly/raw/master/updates.xslt");
       var category = updatesManager.Categories.AddOrActivate("fsi-friendly", uri);
       category.CustomizeLocalEnvironmentInfo.Advise(lifetime, args =>
       {
